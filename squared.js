@@ -1,13 +1,13 @@
 function squareDigites(num) {
     num = String(num)
-    let sum = 0
-    let final = 0
+    let final = ""
     for (i = 0; i < num.length; i++) {
-        number = Number(num[i] ** 2)
-        sum = sum + String(number)
-        final = Number(sum)
+        final += Number(num[i] ** 2)
+        
 
     }
-    return final
+    return Number(final)
 }
-console.log(squareDigites(9119))
+// console.log(squareDigites(9119))
+
+
